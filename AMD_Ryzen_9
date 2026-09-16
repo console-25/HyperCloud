@@ -18,7 +18,7 @@ EOF
     # Automatic Disk Management
     # =============================
     # Uses /tmp (291GB partition) to bypass the 15GB Home Wall
-    REAL_STORAGE="/tmp/strenoxcloud-data"
+    REAL_STORAGE="/tmp/noryxhosting-data"
     LINK_PATH="$HOME/vms"
     
     mkdir -p "$REAL_STORAGE"
@@ -57,7 +57,7 @@ EOF
         # Cloud-init configuration
         cat > user-data <<EOF
     #cloud-config
-    hostname: strenoxcloud
+    hostname: noryxhosting
     manage_etc_hosts: true
     disable_root: false
     ssh_pwauth: true
